@@ -1,0 +1,13 @@
+<div class="widget tags">
+    <header>
+      <h3 class="h6">Tags</h3>
+    </header>
+    
+    <ul class="list-inline">
+        <li *ngFor="let tag of tags" class="list-inline-item">
+          <!-- [routerLink]="['/blog']" [queryParams]="{ tag: tag.substring(1) }" -->
+            <a routerLink class="tag">{{tag}}</a>
+        </li>
+    </ul>
+    
+  </div>
